@@ -102,7 +102,7 @@ button:hover {
   box-shadow: 0 0 10px #000;
 }
 
-@media (max-width: 767px) {
+@media only screen and (min-device-width : 320px) and (max-device-width : 768px) {
   .container {
     width: calc(100% - 40px);
     padding: 10px 20px;
