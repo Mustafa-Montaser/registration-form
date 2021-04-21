@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: #ddd;
+}
+
+.container {
+  width: 800px;
+  margin: 20px auto;
+  padding: 30px 100px;
+  background-color: inherit;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 10px #000;
+}
+
+h1 {
+  color: #625f5f;
+}
+
+fieldset {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 5px;
+  padding: 5px 10px 10px 10px;
+  margin: 10px;
+}
+
+legend {
+  padding: 0 5px;
+  font-size: 18px;
+}
+
+input:not(input[type="radio"]) {
+  width: 95%;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 10px;
+  outline: none;
+  margin: 5px;
+  font-size: 20px;
+  color: #1f373d;
+  text-align: center;
+}
+
+input:not(input[type="radio"]):focus {
+  box-shadow: 0 0 10px #000;
+}
+
+fieldset:nth-of-type(4) div {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+input[type="radio"], label {
+  cursor: pointer;
+  margin: 0 5px
+}
+
+input[type="radio"] {
+  width: 20px;
+  height: 20px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+button {
+  width: 100%;
+  padding: 15px 0;
+  margin: 20px 0;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  background-color: #0099cc;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #33a6cc;
+  box-shadow: 0 0 10px #000;
+}
+
+@media (max-width: 767px) {
+  .container {
+    width: calc(100% - 40px);
+    padding: 10px 20px;
+    margin: 20px;
+  }
+
+  h1 {
+    font-size: 18px;
+  }
+}
