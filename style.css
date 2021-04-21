@@ -24,21 +24,23 @@ body {
 
 h1 {
   color: #625f5f;
+  margin: revert;
 }
 
 fieldset {
   width: 100%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   border-radius: 5px;
-  padding: 5px 10px 10px 10px;
+  height: 100px;
   margin: 10px;
 }
 
 legend {
   padding: 0 5px;
   font-size: 18px;
+  margin: 0 0 0 10px;
 }
 
 input[type="text"], input[type="number"], input[type="email"], input[type="datetime-local"] {
@@ -60,7 +62,6 @@ input[type="text"]:focus, input[type="number"]:focus, input[type="email"]:focus,
 fieldset:nth-of-type(4) div {
   display: flex;
   align-items: center;
-  padding: 10px;
 }
 
 input[type="radio"], label {
@@ -106,10 +107,9 @@ button:hover {
   .container {
     width: calc(100% - 40px);
     padding: 10px 20px;
-    margin: 20px;
   }
 
   h1 {
-    font-size: 18px;
+    font-size: 25px;
   }
 }
