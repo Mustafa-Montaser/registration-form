@@ -15,26 +15,27 @@ body {
   padding: 30px 100px;
   background-color: inherit;
   border-radius: 5px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   box-shadow: 0 0 10px #000;
 }
 
 h1 {
   color: #625f5f;
-  margin: revert;
+  margin: 20px 0;
+  width: 276px;
+  position: relative;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 fieldset {
   width: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  border-radius: 5px;
   height: 100px;
-  margin: 10px;
+  border-radius: 5px;
+  margin: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 legend {
@@ -43,20 +44,29 @@ legend {
   margin: 0 0 0 10px;
 }
 
-input[type="text"], input[type="number"], input[type="email"], input[type="datetime-local"] {
+input {
+  height: 60%;
+}
+
+input:focus {
+  box-shadow: 0 0 10px #000;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="datetime-local"] {
   width: 95%;
   border: none;
   border-radius: 5px;
-  padding: 10px 10px;
   outline: none;
-  margin: 5px;
   font-size: 20px;
   color: #1f373d;
   text-align: center;
 }
 
-input[type="text"]:focus, input[type="number"]:focus, input[type="email"]:focus, input[type="datetime-local"]:focus {
-  box-shadow: 0 0 10px #000;
+fieldset:nth-of-type(4) {
+  justify-content: space-evenly;
 }
 
 fieldset:nth-of-type(4) div {
@@ -64,14 +74,19 @@ fieldset:nth-of-type(4) div {
   align-items: center;
 }
 
-input[type="radio"], label {
+input[type="radio"],
+label {
   cursor: pointer;
-  margin: 0 5px
+  margin: 0 5px;
 }
 
 input[type="radio"] {
   width: 20px;
   height: 20px;
+}
+
+input[type="datetime-local"] {
+  background-color: #fff;
 }
 
 /* Chrome, Safari, Edge, Opera */
@@ -81,7 +96,7 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 /* Firefox */
-input[type=number] {
+input[type="number"] {
   -moz-appearance: textfield;
 }
 
@@ -111,5 +126,6 @@ button:hover {
 
   h1 {
     font-size: 25px;
+    width: 216px;
   }
 }
